@@ -217,7 +217,7 @@ export function SearchAndCompareSection() {
                                 <Tooltip 
                                     cursor={{ fill: '#f1f5f9' }}
                                     contentStyle={{ backgroundColor: '#ffffff', borderColor: '#e2e8f0', color: '#1e293b', borderRadius: '8px', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
-                                    formatter={(value: number, name: string, props: any) => {
+                                    formatter={(value, name, props) => {
                                         const gameName = name;
                                         const minKey = `${gameName}_min`;
                                         const minutes = props.payload[minKey];
